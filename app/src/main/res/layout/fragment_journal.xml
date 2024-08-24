@@ -8,6 +8,15 @@
     android:padding="15dp"
     tools:context=".ui.journal.JournalFragment">
 
+    <ImageView
+        android:id="@+id/backgroundImageViewJournal"
+        android:layout_width="411dp"
+        android:layout_height="753dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/journal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-14dp" /> <!-- Replace with your image resource -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/journalRecyclerView"
         android:layout_width="0dp"
