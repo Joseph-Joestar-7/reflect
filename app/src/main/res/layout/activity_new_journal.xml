@@ -6,6 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.journal.NewJournalActivity">
+    <ImageView
+        android:id="@+id/backgroundImageViewNewJournal"
+        android:layout_width="match_parent"
+        android:layout_height="743dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/newjournal" /> <!-- Replace with your image resource -->
 
     <EditText
         android:id="@+id/journalTitle"

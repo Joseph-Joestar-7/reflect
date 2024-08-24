@@ -10,6 +10,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/backgroundImageViewSettings"
+        android:layout_width="match_parent"
+        android:layout_height="743dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings" /> <!-- Replace with your image resource -->
 
     <LinearLayout
         android:layout_width="369dp"

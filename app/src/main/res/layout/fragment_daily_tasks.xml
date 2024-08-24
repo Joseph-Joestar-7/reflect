@@ -7,6 +7,13 @@
     tools:context=".ui.dailytasks.DailyTasksFragment"
     android:padding="15dp">
 
+    <ImageView
+        android:id="@+id/backgroundImageViewDailyTask"
+        android:layout_width="match_parent"
+        android:layout_height="743dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dailytask" /> <!-- Replace with your image resource -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
