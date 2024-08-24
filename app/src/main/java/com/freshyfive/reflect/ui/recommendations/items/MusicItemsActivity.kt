@@ -20,7 +20,7 @@ class MusicItemsActivity : AppCompatActivity() {
         val list = listOf("test", "test2", "test3")
 
         val musicAdapter = MusicAdapter(list)
-        val recyclerView = findViewById<RecyclerView>(R.id.ShortfilmsRecyclerView)
+        val recyclerView = findViewById<RecyclerView>(R.id.MusicRecyclerView)
         recyclerView.adapter = musicAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
     }

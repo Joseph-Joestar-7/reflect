@@ -13,7 +13,7 @@ class ShortFilmAdapter(private val list: List<String>) : RecyclerView.Adapter<Sh
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShortFilmViewHolder {
-        return ShortFilmViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.music_items, parent, false))
+        return ShortFilmViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.shortfilms_items, parent, false))
     }
 
     override fun getItemCount(): Int {

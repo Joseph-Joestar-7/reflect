@@ -1,10 +1,13 @@
 package com.freshyfive.reflect.data
 
-class Data {
     val greetingsList = listOf<String>()
 
     val quotesList: MutableMap<String, List<String>> = mutableMapOf()
     val taskMap: MutableMap<String, List<String>> = mutableMapOf()
+
+    val studentArticleList:MutableMap<String,List<Article>> = mutableMapOf()
+    val professionalArticleList:MutableMap<String,List<Article>> = mutableMapOf()
+    val retiredArticleList:MutableMap<String,List<Article>> = mutableMapOf()
 
     val studentBookList: MutableMap<String, List<String>> = mutableMapOf()
     val professionalBookList: MutableMap<String, List<String>> = mutableMapOf()
@@ -21,7 +24,3 @@ class Data {
     val studentShortFilmList: MutableMap<String, List<String>> = mutableMapOf()
     val professionalShortFilmList: MutableMap<String, List<String>> = mutableMapOf()
     val retiredShortFilmList: MutableMap<String, List<String>> = mutableMapOf()
-
-
-
-}
