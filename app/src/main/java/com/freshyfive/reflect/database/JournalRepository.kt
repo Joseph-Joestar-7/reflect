@@ -17,7 +17,6 @@ class JournalRepository(private val journalDao: JournalDao) {
     suspend fun updateTitle(journalId: Int, newTitle: String) {
         journalDao.updateTitle(journalId, newTitle)
     }
-
     suspend fun updateMainText(journalId: Int, newMainText: String) {
         journalDao.updateMainText(journalId, newMainText)
     }

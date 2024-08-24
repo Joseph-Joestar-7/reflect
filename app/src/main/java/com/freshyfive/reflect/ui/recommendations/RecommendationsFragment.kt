@@ -12,17 +12,7 @@ import com.freshyfive.reflect.R
 
 class RecommendationsFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = RecommendationsFragment()
-    }
-
     private val viewModel: RecommendationsViewModel by viewModels()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        // TODO: Use the ViewModel
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

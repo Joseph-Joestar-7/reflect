@@ -2,10 +2,12 @@ package com.freshyfive.reflect.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.freshyfive.reflect.R
+import com.freshyfive.reflect.models.saveMood
 
 class FeelingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,5 +27,32 @@ class FeelingActivity : AppCompatActivity() {
 //            finish()
 //        }
 
+    }
+
+    fun setMood(view: View) {
+        val viewId = view.id
+        when(viewId) {
+            R.id.Sad -> {
+                saveMood(this, "Sad")
+            }
+            R.id.Angry -> {
+                saveMood(this, "Angry")
+            }
+            R.id.Depressed -> {
+                saveMood(this, "Depressed")
+            }
+            R.id.Worried -> {
+                saveMood(this, "Worried")
+            }
+            R.id.Frustrated -> {
+                saveMood(this, "Frustrated")
+            }
+            R.id.Anxious -> {
+                saveMood(this, "Anxious")
+            }
+        }
+        val i = Intent(this, HomeActivity::class.java)
+        startActivity(i)
+        finish()
     }
 }

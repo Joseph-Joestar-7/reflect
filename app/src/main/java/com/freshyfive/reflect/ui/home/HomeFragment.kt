@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
 //        homeViewModel.text.observe(viewLifecycleOwner) {
 //            textView.text = it
 //        }
-        textView.text = "Good evening, ${getUserName(root.context)}"
+        textView.text = "Hello, ${getUserName(root.context)}"
         return root
     }
 
