@@ -7,25 +7,192 @@
     android:layout_height="match_parent"
     tools:context=".ui.FeelingActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="How are you feeling today?"
-            android:textSize="24sp"
+
+        <LinearLayout
+            android:layout_width="345dp"
+            android:layout_height="710dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.128" />
+            app:layout_constraintVertical_bias="0.0">
 
-        <Button
-            android:id="@+id/openHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="121dp"
-            android:text="Next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+                <TextView
+                    android:id="@+id/Mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="115dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center"
+                    android:text="Tell Us About Your Mood Today !!"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.128" />
 
+                <LinearLayout
+                    android:layout_width="345dp"
+                    android:layout_height="551dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+
+
+                    app:layout_constraintVertical_bias="0.307">
+
+                        <LinearLayout
+                            android:layout_width="345dp"
+                            android:layout_height="135dp"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.487"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.307">
+
+                                <TextView
+                                    android:id="@+id/Sad"
+                                    android:layout_width="131dp"
+                                    android:layout_height="87dp"
+                                    android:layout_gravity="start"
+                                    android:background="@drawable/rounded_corner"
+                                    android:gravity="center"
+                                    android:text="Sad"
+                                    android:textSize="24sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.128" />
+
+                                <TextView
+                                    android:id="@+id/Angry"
+                                    android:layout_width="135dp"
+                                    android:layout_height="86dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="35dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:gravity="center"
+                                    android:text="Angry"
+                                    android:textSize="24sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.128" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="345dp"
+                            android:layout_height="135dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.487"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.307">
+
+                                <TextView
+                                    android:id="@+id/Depressed"
+                                    android:layout_width="131dp"
+                                    android:layout_height="87dp"
+                                    android:layout_gravity="start"
+                                    android:background="@drawable/rounded_corner"
+                                    android:gravity="center"
+                                    android:text="Depressed"
+                                    android:textSize="24sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.128" />
+
+                                <TextView
+                                    android:id="@+id/Worried"
+                                    android:layout_width="131dp"
+                                    android:layout_height="87dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="35dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:gravity="center"
+                                    android:text="Worried"
+                                    android:textSize="24sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.128" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="345dp"
+                            android:layout_height="135dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.487"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.307">
+
+                                <TextView
+                                    android:id="@+id/Frustrated"
+                                    android:layout_width="131dp"
+                                    android:layout_height="87dp"
+                                    android:layout_gravity="start"
+                                    android:background="@drawable/rounded_corner"
+                                    android:gravity="center"
+                                    android:text="Frustrated"
+                                    android:textSize="24sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.128" />
+
+                                <TextView
+                                    android:id="@+id/Anxious"
+                                    android:layout_width="131dp"
+                                    android:layout_height="87dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="35dp"
+                                    android:background="@drawable/rounded_corner"
+                                    android:gravity="center"
+                                    android:text="Anxious"
+                                    android:textSize="24sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.128" />
+
+
+                        </LinearLayout>
+
+
+                </LinearLayout>
+        </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
