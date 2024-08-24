@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 
 class JournalRepository(private val journalDao: JournalDao) {
 
-    val allJournals: List<JournalEntity> = journalDao.getAllJournals()
+//    val allJournals: List<JournalEntity> = journalDao.getAllJournals()
 
     suspend fun insert(journal: JournalEntity) {
         journalDao.insertJournal(journal)

@@ -27,6 +27,15 @@
         <item>Female</item>
         <item>Prefer not to say</item>
     </string-array>
+
+    <string-array name="mood_items">
+        <item>ANGRY</item>
+        <item>DEPRESSED</item>
+        <item>SAD</item>
+        <item>HAPPY</item>
+        <item>NEUTRAL</item>
+    </string-array>
+
     <string name="prompt_email">Email</string>
 
 </resources>

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.freshyfive.reflect.R
 import com.freshyfive.reflect.database.JournalEntity
 
-class JournalAdapter(private val journals: List<JournalEntity>) : RecyclerView.Adapter<JournalAdapter.JournalViewHolder>() {
+class JournalAdapter(private val journals: MutableList<JournalEntity>) : RecyclerView.Adapter<JournalAdapter.JournalViewHolder>() {
     inner class JournalViewHolder(v: View) : RecyclerView.ViewHolder(v) {
         val journalTitle: TextView = v.findViewById(R.id.journalTitle)
         val journalDate: TextView = v.findViewById(R.id.journalCreatedDate)
@@ -26,6 +26,12 @@ class JournalAdapter(private val journals: List<JournalEntity>) : RecyclerView.A
     override fun onBindViewHolder(holder: JournalViewHolder, position: Int) {
         holder.journalTitle.text = journals[position].title
         holder.journalDate.text = journals[position].createdAt.toString()
+    }
+
+    fun updateData(newData: List<JournalEntity>) {
+        journals.clear()
+        journals.addAll(newData)
+        notifyDataSetChanged()
     }
 }
 

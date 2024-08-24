@@ -10,7 +10,7 @@ import androidx.room.Query
 @Dao
 interface JournalDao {
     @Query("SELECT * FROM journals ORDER BY isStarred DESC, id DESC")
-    fun getAllJournals(): List<JournalEntity>
+    suspend fun getAllJournals(): List<JournalEntity>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertJournal(journal: JournalEntity)
