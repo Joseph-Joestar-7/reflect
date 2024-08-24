@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.freshyfive.reflect.R
-import com.freshyfive.reflect.database.ArticleEntity
 
 class BookAdapter(private val list: List<String>) : RecyclerView.Adapter<BookAdapter.BookViewHolder>() {
     inner class BookViewHolder(view: View): RecyclerView.ViewHolder(view) {

@@ -32,6 +32,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.recommendations.items.ArticleItemsActivity"
+            android:exported="false" />
+        <activity android:name=".ui.recommendations.items.BooksItemsActivity"
+            android:exported="false" />
+        <activity android:name=".ui.recommendations.items.MoviesItemsActivity"
+            android:exported="false" />
+        <activity android:name=".ui.recommendations.items.MusicItemsActivity"
+            android:exported="false" />
+        <activity android:name=".ui.recommendations.items.ShortfilmItemsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

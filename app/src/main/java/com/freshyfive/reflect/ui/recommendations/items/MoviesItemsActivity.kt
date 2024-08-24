@@ -17,10 +17,10 @@ class MoviesItemsActivity : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
-        val list = listOf("test", "test2", "test3")
+        val list = listOf("test", "test2", "test3", "test4")
 
         val movieAdapter = MovieAdapter(list)
-        val recyclerView = findViewById<RecyclerView>(R.id.ShortfilmsRecyclerView)
+        val recyclerView = findViewById<RecyclerView>(R.id.MoviesRecyclerView)
         recyclerView.adapter = movieAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
     }
