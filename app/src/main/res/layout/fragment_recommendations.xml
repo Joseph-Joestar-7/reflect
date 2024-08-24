@@ -11,6 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
         android:layout_width="372dp"
         android:layout_height="679dp"
@@ -21,6 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498"> <!-- Apply the border drawable here -->
+
         <TextView
             android:id="@+id/ArticlesTab"
             android:layout_width="match_parent"
@@ -28,7 +30,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/article_background"
             android:gravity="center"
             android:text="Articles" />
 
@@ -38,7 +40,7 @@
             android:layout_height="95dp"
             android:layout_gravity="center"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/books_background"
             android:gravity="center"
             android:text="Books" />
 
@@ -48,7 +50,7 @@
             android:layout_height="95dp"
             android:layout_gravity="center"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/movies_background"
             android:gravity="center"
             android:text="Movies" />
 
@@ -58,7 +60,7 @@
             android:layout_height="92dp"
             android:layout_gravity="center"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/music_background"
             android:gravity="center"
             android:text="Music" />
 
@@ -68,7 +70,7 @@
             android:layout_height="99dp"
             android:layout_gravity="center"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/shortfilms_background"
             android:gravity="center"
             android:text="Short Films" />
 
