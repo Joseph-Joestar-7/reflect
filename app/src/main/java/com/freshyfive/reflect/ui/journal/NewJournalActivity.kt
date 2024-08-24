@@ -1,5 +1,6 @@
 package com.freshyfive.reflect.ui.journal
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -15,6 +16,7 @@ import com.freshyfive.reflect.database.JournalDao
 import com.freshyfive.reflect.database.JournalDatabase
 import com.freshyfive.reflect.database.JournalEntity
 import com.freshyfive.reflect.database.Mood
+import com.freshyfive.reflect.ui.HomeActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -47,8 +49,9 @@ class NewJournalActivity : AppCompatActivity() {
                 dao.insertJournal(newJournal)
             }
             Toast.makeText(this, "New note is added to journal.", Toast.LENGTH_SHORT).show()
-
-
+            val i = Intent(this, HomeActivity::class.java)
+            startActivity(i)
+            finish()
 
 
 

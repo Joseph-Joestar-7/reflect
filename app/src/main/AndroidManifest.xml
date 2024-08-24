@@ -21,6 +21,8 @@
         <activity
             android:name=".ui.FeelingActivity"
             android:exported="false" />
+        <activity android:name=".ui.journal.NewJournalActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
