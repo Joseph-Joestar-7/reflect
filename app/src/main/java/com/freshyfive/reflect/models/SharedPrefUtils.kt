@@ -25,6 +25,11 @@ fun getUserName(context: Context): String? {
     return sharedPreferences.getString("userName", null)
 }
 
+fun isMoodAvailable(context: Context):Boolean{
+    val sharedPreferences = context.getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+    return sharedPreferences.contains("userMood")
+}
+
 fun isUserDataAvailable(context: Context): Boolean {
     val sharedPreferences: SharedPreferences = context.getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
     return sharedPreferences.contains("userName") &&
