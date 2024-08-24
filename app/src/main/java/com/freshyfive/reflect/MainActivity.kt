@@ -1,35 +1,34 @@
 package com.freshyfive.reflect
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.freshyfive.reflect.databinding.ActivityMainBinding
+import com.freshyfive.reflect.models.isMoodAvailable
+import com.freshyfive.reflect.models.isUserDataAvailable
+import com.freshyfive.reflect.ui.FeelingActivity
+import com.freshyfive.reflect.ui.HomeActivity
+import com.freshyfive.reflect.ui.LoginActivity
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        if (isUserDataAvailable(this)) {
+            if (isMoodAvailable(this)) {
+                val i = Intent(this, HomeActivity::class.java)
+                startActivity(i)
+                finish()
+            } else {
+                val i = Intent(this, FeelingActivity::class.java)
+                startActivity(i)
+                finish()
+            }
+        } else {
+            val i = Intent(this, LoginActivity::class.java)
+            startActivity(i)
+            finish()
+        }
 
-        val navView: BottomNavigationView = binding.navView
-
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_journal, R.id.navigation_daily_tasks, R.id.navigation_home, R.id.navigation_recommendations, R.id.navigation_settings
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
     }
 }
