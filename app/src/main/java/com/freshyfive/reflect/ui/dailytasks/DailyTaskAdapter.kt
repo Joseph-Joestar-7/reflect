@@ -6,10 +6,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.freshyfive.reflect.R
-import com.freshyfive.reflect.database.JournalEntity
-import com.freshyfive.reflect.database.TaskEntity
 
-class DailyTaskAdapter(private val dailytasks: List<TaskEntity>) : RecyclerView.Adapter<DailyTaskAdapter.TaskViewHolder>() {
+class DailyTaskAdapter(private val dailytasks: List<String>) : RecyclerView.Adapter<DailyTaskAdapter.TaskViewHolder>() {
     inner class TaskViewHolder(v: View) : RecyclerView.ViewHolder(v) {
         val taskName: TextView = v.findViewById(R.id.taskName)
         val isCompleted: TextView = v.findViewById(R.id.isCompleted)
@@ -25,7 +23,6 @@ class DailyTaskAdapter(private val dailytasks: List<TaskEntity>) : RecyclerView.
     }
 
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
-        holder.taskName.text = dailytasks[position].taskName
-        holder.isCompleted.text = dailytasks[position].isCompleted.toString()
+        holder.taskName.text = dailytasks[position]
     }
 }

@@ -1,15 +1,14 @@
 package com.freshyfive.reflect.ui.dailytasks
 
-import androidx.fragment.app.viewModels
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.freshyfive.reflect.R
-import com.freshyfive.reflect.database.TaskEntity
 
 class DailyTasksFragment : Fragment() {
 
@@ -32,14 +31,7 @@ class DailyTasksFragment : Fragment() {
         val taskRecyclerView = view.findViewById<RecyclerView>(R.id.dailyTasksView)
 
         val list = listOf(
-            TaskEntity(
-                "Go for a walk",
-                false
-            ),
-            TaskEntity(
-                "Meditate",
-                false
-            ),
+                "Go for a walk", "Meditate"
         )
 
         taskRecyclerView.adapter = DailyTaskAdapter(list)

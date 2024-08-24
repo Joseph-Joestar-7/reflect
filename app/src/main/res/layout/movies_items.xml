@@ -11,7 +11,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/Movie1"
+            android:id="@+id/MovieName"
             android:layout_width="354dp"
             android:layout_height="215dp"
             android:layout_gravity="center"
@@ -20,32 +20,6 @@
             android:gravity="center"
             android:padding="15dp"
             android:text="Movie1\n-By Director"
-            android:textColor="#000000"
-            android:textSize="28sp" />
-
-        <TextView
-            android:id="@+id/Movie2"
-            android:layout_width="354dp"
-            android:layout_height="215dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rounded_corner"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="Movie2\n-By Director"
-            android:textColor="#000000"
-            android:textSize="28sp" />
-
-        <TextView
-            android:id="@+id/Movie3"
-            android:layout_width="354dp"
-            android:layout_height="215dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rounded_corner"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="Movie3\n-By Director"
             android:textColor="#000000"
             android:textSize="28sp" />
 
