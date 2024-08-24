@@ -20,7 +20,7 @@ class BooksItemsActivity : AppCompatActivity() {
         val list = listOf("test", "test2", "test3")
 
         val bookAdapter = BookAdapter(list)
-        val recyclerView = findViewById<RecyclerView>(R.id.ShortfilmsRecyclerView)
+        val recyclerView = findViewById<RecyclerView>(R.id.BooksRecyclerView)
         recyclerView.adapter = bookAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
     }
