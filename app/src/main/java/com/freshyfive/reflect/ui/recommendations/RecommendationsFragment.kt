@@ -2,10 +2,6 @@ package com.freshyfive.reflect.ui.recommendationsate
 
 import com.freshyfive.reflect.ui.recommendations.RecommendationsViewModel
 
-(savedInstanceState)
-
-        // TODO: Use the ViewMo
-
 import androidx.fragment.app.viewModels
 import android.os.Bundle
 import androidx.fragment.app.Fragment

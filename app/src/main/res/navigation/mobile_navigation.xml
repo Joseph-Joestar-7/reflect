@@ -6,20 +6,33 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+        android:id="@+id/navigation_journal"
+        android:name="com.freshyfive.reflect.ui.dailytasks.DailyTasksFragment"
+        android:label="Journal"
+        tools:layout="@layout/fragment_journal" />
+
+    <fragment
+        android:id="@+id/navigation_daily_tasks"
+        android:name="com.freshyfive.reflect.ui.dailytasks.DailyTasksFragment"
+        android:label="Daily Tasks"
+        tools:layout="@layout/fragment_daily_tasks" />
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="com.freshyfive.reflect.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.freshyfive.reflect.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_recommendations"
+        android:name="com.freshyfive.reflect.ui.recommendationsate.RecommendationsFragment"
+        android:label="Recommendations"
+        tools:layout="@layout/fragment_recommendations" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.freshyfive.reflect.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+    <fragment android:id="@id/navigation_settings"
+        android:name="com.freshyfive.reflect.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+
 </navigation>
