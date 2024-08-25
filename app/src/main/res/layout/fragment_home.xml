@@ -2,12 +2,12 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -74,7 +74,7 @@
             <TextView
                 android:id="@+id/Daily_Quotes"
                 android:layout_width="match_parent"
-                android:layout_height="61dp"
+                android:layout_height="match_parent"
                 android:text="\tDaily_Quote here"
                 android:textSize="28sp" />
 

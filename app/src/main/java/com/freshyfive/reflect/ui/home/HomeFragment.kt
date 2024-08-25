@@ -58,7 +58,7 @@ class HomeFragment : Fragment() {
         val dailyQuotes = view.findViewById<TextView>(R.id.Daily_Quotes)
         val dailyTip = view.findViewById<TextView>(R.id.Tip)
         val mood = getMood(view.context)
-        dailyQuotes.text = quotesList[mood]?.shuffled()?.take(1).toString()
+        dailyQuotes.text = quotesList[mood?.uppercase()]?.shuffled()?.take(1).toString()
         dailyTip.text = tipsList.random()
 
         val beatsRecyclerView = view.findViewById<RecyclerView>(R.id.beatsRecyclerView)
