@@ -32,7 +32,8 @@
             android:layout_marginBottom="25dp"
             android:background="@drawable/article_background"
             android:gravity="center"
-            android:text="Articles" />
+            android:text="Articles"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/BooksTab"
@@ -42,7 +43,8 @@
             android:layout_marginBottom="25dp"
             android:background="@drawable/books_background"
             android:gravity="center"
-            android:text="Books" />
+            android:text="Books"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/MoviesTab"
@@ -52,7 +54,8 @@
             android:layout_marginBottom="25dp"
             android:background="@drawable/movies_background"
             android:gravity="center"
-            android:text="Movies" />
+            android:text="Movies"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/MusicTab"
@@ -62,7 +65,8 @@
             android:layout_marginBottom="25dp"
             android:background="@drawable/music_background"
             android:gravity="center"
-            android:text="Music" />
+            android:text="Music"
+            android:textColor="#ffffff"/>
 
         <TextView
             android:id="@+id/ShortFilmTab"
@@ -72,7 +76,8 @@
             android:layout_marginBottom="25dp"
             android:background="@drawable/shortfilms_background"
             android:gravity="center"
-            android:text="Short Films" />
+            android:text="Short Films"
+            android:textColor="#ffffff"/>
 
 
         <!--</FrameLayout>-->
