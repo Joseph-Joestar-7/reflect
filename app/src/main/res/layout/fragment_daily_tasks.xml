@@ -4,20 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dailytasks.DailyTasksFragment"
-    android:padding="15dp">
+    tools:context=".ui.dailytasks.DailyTasksFragment">
 
     <ImageView
         android:id="@+id/backgroundImageViewDailyTask"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="743dp"
         android:scaleType="fitXY"
-        android:src="@drawable/dailytask" /> <!-- Replace with your image resource -->
+        android:src="@drawable/dailytask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dailyTasksView" /> <!-- Replace with your image resource -->
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/dailyTasksView"
-        android:padding="15dp"/>
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

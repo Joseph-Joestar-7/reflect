@@ -23,7 +23,7 @@ class ArticleAdapter(private val list: List<Article>) : RecyclerView.Adapter<Art
     }
 
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
-        holder.articleHeading.text = list[position].articleText
-        holder.articleContent.text = list[position].articleName
+        holder.articleHeading.text = list[position].articleName
+        holder.articleContent.text = list[position].articleText
     }
 }

@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.freshyfive.reflect.R
+import com.freshyfive.reflect.data.Article
 import com.freshyfive.reflect.data.professionalArticleList
 import com.freshyfive.reflect.data.professionalBookList
 import com.freshyfive.reflect.data.professionalMovieList
@@ -56,13 +57,11 @@ class RecommendationsFragment : Fragment() {
 
         val mood = getMood(view.context)?.uppercase()
         val profession = getProfession(view.context)
-        Log.d("DEBUG", "Mood: $mood, Profession: $profession")
-
 
         articlesTab.setOnClickListener {
             val i = Intent(view.context, ArticleItemsActivity::class.java)
-//            val list = getLists(mood, profession, "Articles")
-//            i.putStringArrayListExtra("list",viewModel.articleList)
+            val list = getLists(mood, profession, "Articles").mapNotNull { it as? Article }.shuffled().take(1)
+            i.putExtra("list", ArrayList(list))
             startActivity(i)
         }
         booksTab.setOnClickListener {
