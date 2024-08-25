@@ -55,6 +55,7 @@
 
 
         <TextView
+            android:id="@+id/devContact"
             android:layout_width="286dp"
             android:layout_height="64dp"
             android:layout_gravity="center"

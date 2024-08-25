@@ -39,6 +39,7 @@ class SettingsFragment : Fragment() {
         profileName.text = getUserName(view.context).toString()
 
         val sendFeedback = view.findViewById<TextView>(R.id.SendFeedback)
+        val devContact = view.findViewById<TextView>(R.id.devContact)
 
         sendFeedback.setOnClickListener {
             val i = Intent(Intent.ACTION_SEND).apply {
@@ -54,5 +55,11 @@ class SettingsFragment : Fragment() {
                 Toast.makeText(view.context, "There are no email clients installed.", Toast.LENGTH_SHORT).show()
             }
         }
+
+        devContact.setOnClickListener {
+            val i = Intent(view.context, DevelopersContact::class.java)
+            startActivity(i)
+        }
+
     }
 }
