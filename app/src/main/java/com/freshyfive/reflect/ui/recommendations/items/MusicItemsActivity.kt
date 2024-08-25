@@ -17,9 +17,8 @@ class MusicItemsActivity : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
-        val list = listOf("test", "test2", "test3")
-
-        val musicAdapter = MusicAdapter(list)
+        val list = intent.getStringArrayListExtra("list")
+        val musicAdapter = list?.let { MusicAdapter(it) }
         val recyclerView = findViewById<RecyclerView>(R.id.MusicRecyclerView)
         recyclerView.adapter = musicAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)

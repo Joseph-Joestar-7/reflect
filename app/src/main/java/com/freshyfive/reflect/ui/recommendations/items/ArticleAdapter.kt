@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.freshyfive.reflect.R
-import com.freshyfive.reflect.database.ArticleEntity
+import com.freshyfive.reflect.data.Article
 
-class ArticleAdapter(private val list: List<ArticleEntity>) : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
+class ArticleAdapter(private val list: List<Article>) : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
     inner class ArticleViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val articleHeading: TextView = view.findViewById(R.id.ArticleHeading)
         val articleContent: TextView = view.findViewById(R.id.ArticleContent)
@@ -23,7 +23,7 @@ class ArticleAdapter(private val list: List<ArticleEntity>) : RecyclerView.Adapt
     }
 
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
-        holder.articleHeading.text = list[position].heading
-        holder.articleContent.text = list[position].content
+        holder.articleHeading.text = list[position].articleText
+        holder.articleContent.text = list[position].articleName
     }
 }

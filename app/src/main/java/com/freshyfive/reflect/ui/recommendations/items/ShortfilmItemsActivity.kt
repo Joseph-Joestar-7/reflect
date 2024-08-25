@@ -18,9 +18,8 @@ class ShortfilmItemsActivity : AppCompatActivity() {
 //            insets
 //        }
 
-        val list = listOf("test", "test2", "test3")
-
-        val shortFilmAdapter = ShortFilmAdapter(list)
+        val list = intent.getStringArrayListExtra("list")
+        val shortFilmAdapter = list?.let { ShortFilmAdapter(it) }
         val recyclerView = findViewById<RecyclerView>(R.id.ShortfilmsRecyclerView)
         recyclerView.adapter = shortFilmAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)

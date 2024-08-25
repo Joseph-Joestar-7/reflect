@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Reflect"
         tools:targetApi="31">
         <activity
+            android:name=".ui.journal.ExpandedJournalActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.LoginActivity"
             android:exported="false" />
         <activity
@@ -21,7 +24,8 @@
         <activity
             android:name=".ui.FeelingActivity"
             android:exported="false" />
-        <activity android:name=".ui.journal.NewJournalActivity"
+        <activity
+            android:name=".ui.journal.NewJournalActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -29,19 +33,24 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ui.recommendations.items.ArticleItemsActivity"
+        <activity
+            android:name=".ui.recommendations.items.ArticleItemsActivity"
             android:exported="false" />
-        <activity android:name=".ui.recommendations.items.BooksItemsActivity"
+        <activity
+            android:name=".ui.recommendations.items.BooksItemsActivity"
             android:exported="false" />
-        <activity android:name=".ui.recommendations.items.MoviesItemsActivity"
+        <activity
+            android:name=".ui.recommendations.items.MoviesItemsActivity"
             android:exported="false" />
-        <activity android:name=".ui.recommendations.items.MusicItemsActivity"
+        <activity
+            android:name=".ui.recommendations.items.MusicItemsActivity"
             android:exported="false" />
-        <activity android:name=".ui.recommendations.items.ShortfilmItemsActivity"
+        <activity
+            android:name=".ui.recommendations.items.ShortfilmItemsActivity"
             android:exported="false" />
     </application>
 

@@ -17,9 +17,8 @@ class MoviesItemsActivity : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
-        val list = listOf("test", "test2", "test3", "test4")
-
-        val movieAdapter = MovieAdapter(list)
+        val list = intent.getStringArrayListExtra("list")
+        val movieAdapter = list?.let { MovieAdapter(it) }
         val recyclerView = findViewById<RecyclerView>(R.id.MoviesRecyclerView)
         recyclerView.adapter = movieAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)

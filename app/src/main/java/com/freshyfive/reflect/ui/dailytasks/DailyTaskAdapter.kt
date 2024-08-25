@@ -10,7 +10,6 @@ import com.freshyfive.reflect.R
 class DailyTaskAdapter(private val dailytasks: List<String>) : RecyclerView.Adapter<DailyTaskAdapter.TaskViewHolder>() {
     inner class TaskViewHolder(v: View) : RecyclerView.ViewHolder(v) {
         val taskName: TextView = v.findViewById(R.id.taskName)
-        val isCompleted: TextView = v.findViewById(R.id.isCompleted)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {

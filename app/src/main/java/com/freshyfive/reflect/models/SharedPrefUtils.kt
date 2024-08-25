@@ -39,3 +39,15 @@ fun isUserDataAvailable(context: Context): Boolean {
             sharedPreferences.contains("userGender") &&
             sharedPreferences.contains("userProfession")
 }
+
+fun getMood(context: Context): String? {
+    val sharedPreferences: SharedPreferences =
+        context.getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+    return sharedPreferences.getString("userMood", null)
+}
+
+fun getProfession(context: Context): String? {
+    val sharedPreferences: SharedPreferences =
+        context.getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+    return sharedPreferences.getString("userProfession", null)
+}

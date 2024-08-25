@@ -1,6 +1,7 @@
 package com.freshyfive.reflect.ui.recommendations.items
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,7 +19,6 @@ class BooksItemsActivity : AppCompatActivity() {
 //            insets
 //        }
         val list = intent.getStringArrayListExtra("list")
-
         val bookAdapter = list?.let { BookAdapter(it) }
         val recyclerView = findViewById<RecyclerView>(R.id.BooksRecyclerView)
         recyclerView.adapter = bookAdapter
