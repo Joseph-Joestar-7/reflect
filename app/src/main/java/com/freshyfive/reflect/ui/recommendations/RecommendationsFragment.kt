@@ -38,22 +38,27 @@ class RecommendationsFragment : Fragment() {
 
         articlesTab.setOnClickListener {
             val i = Intent(view.context, ArticleItemsActivity::class.java)
+//            i.putStringArrayListExtra("list",viewModel.articleList)
             startActivity(i)
         }
         booksTab.setOnClickListener {
             val i = Intent(view.context, BooksItemsActivity::class.java)
+            i.putStringArrayListExtra("list",ArrayList(viewModel.booklist))
             startActivity(i)
         }
         moviesTab.setOnClickListener {
             val i = Intent(view.context, MoviesItemsActivity::class.java)
+            i.putStringArrayListExtra("list",ArrayList(viewModel.movielist))
             startActivity(i)
         }
         musicTab.setOnClickListener {
             val i = Intent(view.context, MusicItemsActivity::class.java)
+            i.putStringArrayListExtra("list",ArrayList(viewModel.musicList))
             startActivity(i)
         }
         shortFilmTab.setOnClickListener {
             val i = Intent(view.context, ShortfilmItemsActivity::class.java)
+            i.putStringArrayListExtra("list",ArrayList(viewModel.shortFilmList))
             startActivity(i)
         }
     }

@@ -17,9 +17,9 @@ class BooksItemsActivity : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
-        val list = listOf("test", "test2", "test3")
+        val list = intent.getStringArrayListExtra("list")
 
-        val bookAdapter = BookAdapter(list)
+        val bookAdapter = list?.let { BookAdapter(it) }
         val recyclerView = findViewById<RecyclerView>(R.id.BooksRecyclerView)
         recyclerView.adapter = bookAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
