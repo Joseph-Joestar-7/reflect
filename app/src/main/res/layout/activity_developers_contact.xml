@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.DevelopersContact">
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="733dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/feelings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="Srijan Dhak\nGithub : https://github.com/jinxedbuffer
+\nLinkedIn : https://LinkedIn.com/in/srijandhak"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="Ritaban Chaudhari\nGithub : https://github.com/Joseph-Joestar-7
+\nLinkedIn : https://www.linkedin.com/in/ritaban-chaudhuri/"/>
+
+        <TextView
+            android:layout_width="300dp"
+                android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="Swastik Gupta\nGithub : https://github.com/SoulMaster-1\nLinkedIn : https://www.linkedin.com/in/swastik-gupta-a9115328b/"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="Shashi Prakash Yadav\nGithub : https://github.com/Shashi0Prakash
+\nLinkedIn : https://www.linkedin.com/in/shashi-prakash-y-90a372186/"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:text="Shubham Kumar\nGithub : https://github.com/Shubham9384235\nLinkedIn : https://www.linkedin.com/in/shubham-kumar-953a67251/"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
