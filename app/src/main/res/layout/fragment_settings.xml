@@ -20,7 +20,6 @@
     <LinearLayout
         android:layout_width="369dp"
         android:layout_height="275dp"
-        android:background="@drawable/rounded_corner"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,15 +39,16 @@
             android:gravity="center"
             android:text="Profile" />
 
-        <Switch
-            android:id="@+id/DarkMode"
-            android:layout_width="289dp"
-            android:layout_height="61dp"
+        <TextView
+            android:id="@+id/SendFeedback"
+            android:layout_width="286dp"
+            android:layout_height="65dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_corner"
             android:gravity="center"
-            android:hint="Dark Mode" />
+            android:text="Send Feedback" />
+
 
         <TextView
             android:layout_width="286dp"
