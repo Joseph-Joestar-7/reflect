@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.freshyfive.reflect.databinding.FragmentHomeBinding
+import com.freshyfive.reflect.models.getMood
 import com.freshyfive.reflect.models.getUserName
 
 class HomeFragment : Fragment() {
@@ -23,8 +24,10 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
+//        val homescreenuistate by homeViewModel.uiState.collectAsState()
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
