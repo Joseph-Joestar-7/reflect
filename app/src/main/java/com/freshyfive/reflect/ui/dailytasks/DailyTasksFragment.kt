@@ -77,7 +77,7 @@ class DailyTasksFragment : Fragment() {
     }
 
     private fun completeTask() {
-        if (completedTasks < totalTasks) {
+        if (completedTasks < totalTasks-1) {
             incrementCompletedTasks()
             addUserPoint()
             updateTaskCounts()
