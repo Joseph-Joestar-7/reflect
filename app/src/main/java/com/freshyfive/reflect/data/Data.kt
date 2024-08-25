@@ -10,6 +10,14 @@ package com.freshyfive.reflect.data
         "SAD" to quotesSad.toList(),
         "WORRIED" to quotesWorried.toList()
     )
+
+    val tipsList: List<String> = listOf(
+    "Regular exercise boosts mood by releasing endorphins.",
+    "Quality sleep improves emotional regulation and mental clarity.",
+    "A balanced diet supports brain health and stabilizes mood.",
+    "Mindfulness practices like meditation reduce anxiety.",
+    "Staying socially connected provides support and a sense of belonging."
+)
     val studenttaskMap: MutableMap<String, List<String>> = mutableMapOf(
         "ANGRY" to tasksStudentAngry.toList(),
         "ANXIOUS" to tasksStudentAnxious.toList(),

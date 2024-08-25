@@ -71,16 +71,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.498">
 
-
-            <TextView
-                android:id="@+id/Quotes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="\tQuote :"
-                android:textSize="35sp"
-                android:textStyle="bold" />
-
             <TextView
                 android:id="@+id/Daily_Quotes"
                 android:layout_width="match_parent"
@@ -111,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="\tDaily Tip :"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -119,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="\tWrite Tip Here"
-                android:textSize="28sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
