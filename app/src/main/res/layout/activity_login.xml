@@ -5,10 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginActivity">
+    tools:context=".ui.LoginActivity"
+    android:background="@drawable/login_background">
 
 
-        <!--    <EditText-->
+
+
+
+    <!--    <EditText-->
         <!--        android:id="@+id/password"-->
         <!--        android:layout_width="0dp"-->
         <!--        android:layout_height="wrap_content"-->
@@ -56,7 +60,7 @@
                 android:hint="Your Name"
                 android:inputType="textPersonName"
                 android:selectAllOnFocus="true"
-                android:textColor="#FF0000"
+                android:textColor="#FFFFFF"
                 tools:layout_editor_absoluteX="30dp"
                 tools:layout_editor_absoluteY="218dp" />
 

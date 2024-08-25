@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.journal.ExpandedJournalActivity">
+    tools:context=".ui.journal.ExpandedJournalActivity"
+    android:background="@drawable/expanded_journal">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
