@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.FeelingActivity">
+    tools:context=".ui.FeelingActivity"
+    android:background="@drawable/login_background">
 
 
         <LinearLayout
@@ -30,6 +31,7 @@
                     android:gravity="center"
                     android:text="Tell Us About Your Mood Today !!"
                     android:textSize="24sp"
+                    android:textColor="#ffffff"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +72,7 @@
                                     android:background="@drawable/rounded_corner"
                                     android:gravity="center"
                                     android:text="Sad"
+                                    android:textColor="#ffffff"
                                     android:textSize="24sp"
                                     android:onClick="setMood"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -87,6 +90,7 @@
                                     android:background="@drawable/rounded_corner"
                                     android:gravity="center"
                                     android:text="Angry"
+                                    android:textColor="#ffffff"
                                     android:textSize="24sp"
                                     android:onClick="setMood"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -120,6 +124,7 @@
                                     android:background="@drawable/rounded_corner"
                                     android:gravity="center"
                                     android:text="Depressed"
+                                    android:textColor="#ffffff"
                                     android:textSize="24sp"
                                     android:onClick="setMood"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -137,6 +142,7 @@
                                     android:background="@drawable/rounded_corner"
                                     android:gravity="center"
                                     android:text="Worried"
+                                    android:textColor="#ffffff"
                                     android:textSize="24sp"
                                     android:onClick="setMood"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -187,6 +193,7 @@
                                     android:background="@drawable/rounded_corner"
                                     android:gravity="center"
                                     android:text="Anxious"
+                                    android:textColor="#ffffff"
                                     android:textSize="24sp"
                                     android:onClick="setMood"
                                     app:layout_constraintBottom_toBottomOf="parent"

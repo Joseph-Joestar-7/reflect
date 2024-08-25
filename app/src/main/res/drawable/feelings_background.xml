@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Rounded corners background -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" /> <!-- Rounded corners radius -->
+            <solid android:color="#FFFFFF" /> <!-- Background color behind the image -->
+        </shape>
+    </item>
+
+    <!-- Image background layer -->
+    <item
+        android:left="0dp"
+        android:top="0dp"
+        android:right="0dp"
+        android:bottom="0dp">
+        <bitmap
+            android:src="@drawable/feelings"
+            android:gravity="fill" />
+    </item>
+
+</layer-list>
