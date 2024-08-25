@@ -38,6 +38,16 @@ val retiredtaskMap: MutableMap<String, List<String>> = mutableMapOf(
 )
 
 
+val beats: List<Pair<String, String>> = listOf(
+    "432Hz Deep Relaxation" to "https://www.youtube.com/watch?v=Mgwd_3k3pOw&list=RDQMHYGSpa2FLZY&start_radio=1",
+    "528Hz Release Inner Conflict & Struggle" to "https://www.youtube.com/watch?v=UkM-FjfN6Mc",
+    "Dopamine Detox" to "https://www.youtube.com/watch?v=Z8Fl_w2AXe8",
+    "Calm an Overactive Mind: Reduce Anxiety & Worry," to "https://www.youtube.com/watch?v=mzH2Jw1s7TE",
+    "Heal PTSD Brain | Cleanse Yourself Out From Traumatic Experience" to "https://www.youtube.com/watch?v=MHE5iOe14Js",
+    "Anxiety Relief Music:" to "https://www.youtube.com/watch?v=JdoTmABeT0U",
+    "Overcome Panic and Anxiety" to "https://www.youtube.com/watch?v=1dFvc42g8CA"
+)
+
 val studentArticleList: MutableMap<String, List<Article>> = mutableMapOf(
     "ANGRY" to articleStudentAngry.toList(),
     "ANXIOUS" to articlesStudentAnxious.toList(),

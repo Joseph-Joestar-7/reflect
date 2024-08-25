@@ -7,6 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.freshyfive.reflect.R
+import com.freshyfive.reflect.data.beats
 import com.freshyfive.reflect.databinding.FragmentHomeBinding
 import com.freshyfive.reflect.models.getMood
 import com.freshyfive.reflect.models.getUserName
@@ -38,6 +42,14 @@ class HomeFragment : Fragment() {
 //        }
         textView.text = "Hello, ${getUserName(root.context)}"
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val beatsRecyclerView = view.findViewById<RecyclerView>(R.id.beatsRecyclerView)
+        beatsRecyclerView.adapter = BeatsAdapter(beats.shuffled().take(3))
+        beatsRecyclerView.layoutManager = LinearLayoutManager(view.context)
     }
 
     override fun onDestroyView() {
