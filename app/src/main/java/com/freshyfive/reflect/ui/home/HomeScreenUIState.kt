@@ -1,4 +1,7 @@
 package com.freshyfive.reflect.ui.home
 
-class HomeScreenUIState {
-}
+
+data class HomeScreenUIState (
+    val quote:String="",
+    var dailyTip:String="",
+)
