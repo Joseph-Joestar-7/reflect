@@ -73,6 +73,7 @@
                 android:entries="@array/dropdown_items"
                 android:gravity="center"
                 android:spinnerMode="dropdown"
+                android:textColor="#FFFFFF"
                 tools:layout_editor_absoluteX="30dp"
                 tools:layout_editor_absoluteY="280dp" />
 
@@ -85,6 +86,7 @@
                 android:entries="@array/Gender_items"
                 android:gravity="center"
                 android:spinnerMode="dropdown"
+                android:textColor="#FFFFFF"
                 tools:layout_editor_absoluteX="30dp"
                 tools:layout_editor_absoluteY="342dp" />
         </LinearLayout>
