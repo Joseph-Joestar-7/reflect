@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/backgroundImageViewDailyTask"
-        android:layout_width="0dp"
-        android:layout_height="743dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/dailytask"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,9 +18,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/dailyTasksView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
