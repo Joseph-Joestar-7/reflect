@@ -1,9 +1,42 @@
 package com.freshyfive.reflect.data
 
-    val greetingsList = listOf<String>()
+    val greetingsList = listOf<String>("","","")
 
-    val quotesList: MutableMap<String, List<String>> = mutableMapOf()
-    val taskMap: MutableMap<String, List<String>> = mutableMapOf()
+    val quotesList: MutableMap<String, List<String>> = mutableMapOf(
+        "ANGRY" to quotesAngry.toList(),
+        "ANXIOUS" to quotesAnxious.toList(),
+        "DEPRESSED" to quotesDepressed.toList(),
+        "FRUSTRATED" to quotesFrustrated.toList(),
+        "SAD" to quotesSad.toList(),
+        "WORRIED" to quotesWorried.toList()
+    )
+    val studenttaskMap: MutableMap<String, List<String>> = mutableMapOf(
+        "ANGRY" to tasksStudentAngry.toList(),
+        "ANXIOUS" to tasksStudentAnxious.toList(),
+        "DEPRESSED" to tasksStudentDepressed.toList(),
+        "FRUSTRATED" to tasksStudentFrustrated.toList(),
+        "SAD" to tasksStudentSad.toList(),
+        "WORRIED" to tasksStudentWorried.toList()
+    )
+
+val workingtaskMap: MutableMap<String, List<String>> = mutableMapOf(
+    "ANGRY" to tasksWorkingAngry.toList(),
+    "ANXIOUS" to tasksWorkingAnxious.toList(),
+    "DEPRESSED" to tasksWorkingDepressed.toList(),
+    "FRUSTRATED" to tasksWorkingFrustrated.toList(),
+    "SAD" to tasksWorkingSad.toList(),
+    "WORRIED" to tasksWorkingWorried.toList()
+)
+
+val retiredtaskMap: MutableMap<String, List<String>> = mutableMapOf(
+    "ANGRY" to tasksRetiredAngry.toList(),
+    "ANXIOUS" to tasksRetiredAnxious.toList(),
+    "DEPRESSED" to tasksRetiredDepressed.toList(),
+    "FRUSTRATED" to tasksRetiredFrustrated.toList(),
+    "SAD" to tasksRetiredSad.toList(),
+    "WORRIED" to tasksRetiredWorried.toList()
+)
+
 
 val studentArticleList: MutableMap<String, List<Article>> = mutableMapOf(
     "ANGRY" to articleStudentAngry.toList(),
